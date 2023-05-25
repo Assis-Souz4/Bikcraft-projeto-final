@@ -1,0 +1,32 @@
+:root {
+  --fundo-header-c12: #000;
+  --texto-btn: #fff;
+}
+.header__bg {
+  background-color: var(--fundo-header-c12);
+  
+}
+img {
+  width: 134px;
+  height: 28px;
+  display: block;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto; 
+}
+.header__menu {
+  display: flex;
+  gap: 40px;
+}
+.header__menu a{
+padding: 16px 0;
+display: inline-block;
+color: var(--texto-btn);
+font-size: 18px;
+}
