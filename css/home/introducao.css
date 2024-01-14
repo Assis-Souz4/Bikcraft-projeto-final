@@ -5,12 +5,9 @@
   box-shadow: 0 -120px #fff inset;
 }
 .introducao {
-  max-width: 1200px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0 40px;
-  padding: 0 20px;
   position: relative;
 }
 .introducao-conteudo {
@@ -18,11 +15,11 @@
   padding-bottom: 200px;
 }
 
-.introducao-conteudo h1 {
+.introducao-conteudo .introducao-titulo {
   color: var(--cor-0);
   margin-bottom: 32px;
 }
-.titulo span {
+.introducao-titulo span {
   color: var(--cor-p1);
 }
 .introducao-conteudo p {
@@ -40,7 +37,6 @@
   object-fit: cover;
   border-radius: 4px;
 }
-
 /* media */
 @media (max-width: 1200px) {
   .introducao-conteudo h1 {
