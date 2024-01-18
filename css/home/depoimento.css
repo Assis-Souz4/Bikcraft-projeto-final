@@ -64,5 +64,6 @@
   }
   .depoimento {
     grid-template-columns: 1fr;
+    margin-top: 0;
   }
 }

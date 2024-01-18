@@ -56,6 +56,9 @@
    .parceiros-lista{
       grid-template-columns: 1fr 1fr;
    }
+   .parceiros-lista li{
+      padding: 20px;
+      }
 }
 @media(max-width:350px){
    .parceiros-lista{
@@ -67,5 +70,8 @@
    .parceiros-titulo{
       font-size: 2rem;
       margin-bottom: 30px;
+   }
+   .parceiros{
+      margin-bottom: 10px;
    }
 }
