@@ -60,6 +60,7 @@
 @media (max-width: 650px) {
   .depoimento img {
     height: 200px;
+    object-fit: cover;
   }
   .depoimento {
     grid-template-columns: 1fr;
