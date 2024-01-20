@@ -1,0 +1,103 @@
+.seguros-bg {
+  background-color: var(--cor-10);
+  margin: 0 auto;
+  padding-top: 60px;
+}
+.seguros-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.seguros-tipo {
+  background-color: var(--cor-12);
+  border-radius: 5px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 76px 32px 76px 64px;
+}
+.seguros-tipo h3 {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.prata {
+  box-shadow: inset 0 44px 0 var(--cor-10), inset 0 -44px 0 var(--cor-10);
+}
+.prata h3 {
+  color: var(--cor-6);
+}
+.ouro h3 {
+  color: var(--cor-p1);
+}
+.seguros-lista {
+  grid-column: 1/-1;
+}
+.seguros-lista li {
+  position: relative;
+  color: var(--cor-0);
+}
+.seguros-lista li + li {
+  padding-top: 20px;
+}
+.seguros-lista li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  position: absolute;
+  background-image: url(../../img/icones/lista.svg);
+  left: -21px;
+  bottom: 8px;
+}
+.titulo {
+  color: var(--cor-0);
+}
+.titulo span {
+  color: var(--cor-p1);
+}
+.seguros-tag-preco {
+  color: var(--cor-0);
+  grid-column: 2;
+}
+.seguros-tag-preco > span {
+  display: block;
+  text-align: right;
+}
+.btn {
+  padding: 18px 32px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+  grid-column: 1/-1;
+  max-width: max-content;
+  grid-column: 1/-1;
+}
+.prata-btn {
+  background: var(--cor-10) !important;
+  color: var(--cor-4);
+}
+.prata-btn:hover {
+  background-color: var(--cor-9) !important;
+}
+/* media */
+@media(max-width:800px) {
+  .seguros-container{
+    grid-template-columns: 1fr;
+  }
+}
+@media(max-width:400px) {
+  .seguros-tag-preco{
+    font-size: 1.5rem;
+  }
+  .seguros-tipo h3{
+    font-size: 1.5rem;
+  }
+  .seguros-tipo{
+    gap: 10px;
+  }
+  .btn {
+    padding: 10px 24px;
+  }
+}
