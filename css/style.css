@@ -2,6 +2,7 @@
 @import url(./global/global.css);
 @import url(./global/header.css);
 @import url(./utilidades/tipografia.css);
+@import url(./global/footer.css);
 /* UTILIDADES */
 @import url(./utilidades/cores.css);
 @import url(./utilidades/componetes.css);

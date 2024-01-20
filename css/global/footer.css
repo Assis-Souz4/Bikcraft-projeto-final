@@ -1,0 +1,7 @@
+.footer-bg{
+   background-color: var(--cor-12);
+}
+.footer-container{
+   display: grid;
+   grid-template-columns: 3fr 4fr 5fr;
+}

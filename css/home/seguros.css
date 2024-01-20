@@ -85,6 +85,12 @@
 @media(max-width:800px) {
   .seguros-container{
     grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .seguros-tipo{
+  margin-top: 0px;
+  gap: 10px;
+    margin-bottom: 10px;
   }
 }
 @media(max-width:400px) {
@@ -96,6 +102,7 @@
   }
   .seguros-tipo{
     gap: 10px;
+    margin-bottom: 10px;
   }
   .btn {
     padding: 10px 24px;
