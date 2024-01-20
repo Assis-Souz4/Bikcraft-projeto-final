@@ -1,7 +1,115 @@
-.footer-bg{
-   background-color: var(--cor-12);
+.footer-bg {
+  background-color: var(--cor-12);
 }
-.footer-container{
-   display: grid;
-   grid-template-columns: 3fr 4fr 5fr;
+#footer-container {
+  display: grid;
+  grid-template-columns: 3fr 4fr 5fr;
+  padding-top: 60px;
+  padding-bottom: 32px;
+  gap: 20px;
+}
+#footer-container h2 {
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+.footer-contato {
+  display: flex;
+  flex-direction: column;
+  color: var(--cor-5);
+}
+.footer-contato {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 80px;
+}
+.footer-contato li + li {
+  padding-top: 8px;
+}
+.footer-contato li:hover {
+  color: var(--cor-0);
+}
+.footer-contato ul::after {
+  content: "";
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--cor-11);
+  max-width: 80%;
+  margin: 15px 0;
+}
+.footer-redes {
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  padding: 20px 0;
+}
+.footer-redes li + li {
+  padding-left: 32px;
+}
+.footer-redes img {
+  max-width: 32px;
+  max-height: 32px;
+}
+.footer-contato span::after {
+  content: "";
+  display: flex;
+  flex-direction: row;
+  border: 1px solid var(--cor-11);
+  max-width: 80%;
+  margin: 10px 0;
+}
+.footer-informacoes {
+  color: var(--cor-5);
+}
+.footer-informacoes li:hover {
+  color: var(--cor-0);
+}
+.footer-informacoes ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer-informacoes li + li {
+  padding-top: 8px;
+}
+.copy {
+  grid-column: 1/-1;
+  color: var(--cor-6);
+}
+/* media */
+@media (max-width: 800px) {
+  #footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-contato ul::after {
+    max-width: 100%;
+  }
+  .footer-contato span::after {
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  #footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .footer-contato {
+    padding-bottom: 20px;
+  }
+  .footer-contato span {
+    margin-bottom: 20px;
+  }
+  .footer-informacoes {
+    padding-bottom: 40px;
+  }
+  .footer-contato ul::after {
+    max-width: 80%;
+  }
+  .footer-contato span::after {
+    max-width: 80%;
+  }
+  .footer-redes {
+    margin-bottom: 20px;
+  }
 }

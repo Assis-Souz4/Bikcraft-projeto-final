@@ -86,6 +86,7 @@
   .seguros-container{
     grid-template-columns: 1fr;
     gap: 0;
+    padding: 60px 0;
   }
   .seguros-tipo{
   margin-top: 0px;
