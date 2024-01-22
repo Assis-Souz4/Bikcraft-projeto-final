@@ -15,3 +15,7 @@
 @import url(./home/seguros.css);
 /* TERMOS */
 @import url(../css/termos/termos.css);
+/* BICICLETAS */
+@import url(../css/bicicletas/bicicletas.css);
+/* ORÇAMENTO */
+@import url(../css/orcamento/orcamento.css);
