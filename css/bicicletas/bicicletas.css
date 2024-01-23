@@ -38,8 +38,8 @@
 }
 .bicicleta-box-conteudo h2::before {
   content: "";
-  height: 2px;
-  width: 6px;
+  height: 6px;
+  width: 10px;
   background-color: var(--cor-p1);
   border: 2px solid transparent;
   display: inline-block;
@@ -53,7 +53,7 @@
 }
 .bicicleta-box-vantagens {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
   align-items: end;
 }
 .bicicleta-box-vantagens ul {
@@ -67,17 +67,15 @@
   gap: 8px;
 }
 .bicicleta-box-vantagens li > img {
-  display: inline;
+  display: inline-block;
   align-items: center;
   width: 24px;
-  height: 24px;
 }
 .bicicleta-box-vantagens li + li {
-  padding-top: 16px;
+  margin-top: 16px;
 }
 .bicicleta-box-botao {
-  max-width: max-content;
-  display: inline-block;
+  display: flex;
   padding: 16px 32px;
   color: var(--cor-p5);
   font-size: 1.125rem;
@@ -87,9 +85,28 @@
   border-radius: 4px;
   text-transform: uppercase;
   font-family: "Poppins";
+  align-items: center;
+}
+.bicicleta-box-botao img {
+  display: inline;
+  position: absolute;
+  top: 20px;
+  right: 5px;
 }
 .bicicleta-box-botao:hover {
   background: var(--cor-p2);
+}
+.bicicleta-box-botao::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background-image: url(../../img/icones/seta.svg);
+  transition: tranform 0.2s;
+}
+.bicicleta-box-botao:hover::after {
+  transform: translateX(4px);
 }
 .bicicleta-box-vantagens a {
   justify-self: end;
@@ -122,25 +139,61 @@
 }
 /* media */
 @media (max-width: 1200px) {
-   .header-interno p{
-      font-size: clamp(1rem, 0.833vw, 1.5rem);
-   }
-   .header-interno h2{
-      font-size: clamp(2.5rem, 2.5vw, 4rem);
-   }
-   .bicicleta-box-img span{
-      font-size: clamp(1.125rem, 0.917vw, 1.125rem);
-   }
-   .bicicleta-box-conteudo h2{
-      
-   }
- }
- 
+  .header-interno p {
+    font-size: clamp(1rem, 0.833vw, 1.5rem);
+  }
+  .header-interno h2 {
+    font-size: clamp(2.5rem, 2.5vw, 4rem);
+  }
+  .bicicleta-box-img span {
+    font-size: clamp(1.125rem, 0.917vw, 1.125rem);
+  }
+}
 @media (max-width: 900px) {
   .bicicleta-box {
     grid-template-columns: 1fr;
   }
   #bicicleta-bg {
     box-shadow: none;
+  }
+  #bicicleta-bg {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 40px 0;
+  }
+  .heigth-footer {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .bicicleta-box-vantagens ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
+  }
+  .bicicleta-box-vantagens li + li {
+    margin-top: 8px;
+  }
+  .bicicleta-box-vantagens ul {
+    display: grid;
+    font-size: clamp(1rem, 0.833vw, 1.125rem);
+  }
+  .bicicleta-box-vantagens li > img {
+    min-width: 24px;
+  }
+  .bicicleta-box-botao {
+    grid-column: 1/-1;
+    padding: 8px 16px;
+    font-size: 1rem;
+  }
+  .bicicleta-box-img .preco-bik {
+    padding: 5px;
+    border-radius: 4px;
+    top: -20px;
+    right: 10px;
+    font-size: 1rem;
+  }
+  .bicicleta-box-conteudo h2 {
+    font-size: clamp(1.2rem, 1.333vw, 1.125rem);
   }
 }
