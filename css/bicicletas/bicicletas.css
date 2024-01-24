@@ -1,4 +1,4 @@
-.header-interno span {
+.header-interno h2 span {
   color: var(--cor-p1);
   display: inline;
 }
@@ -190,12 +190,12 @@
     font-size: clamp(1.2rem, 1.333vw, 1.125rem);
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 530px) {
   .bicicleta-box-img .preco-bik {
-   border-radius: 4px 0px 0px 4px;
+    padding: 5px;
     border-radius: 4px;
-    top: 0px;
-    right: 0px;
+    top: 10px;
+    right: 10px;
     font-size: 1rem;
   }
 }
