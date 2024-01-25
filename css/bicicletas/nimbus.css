@@ -1,0 +1,139 @@
+#bicicleta .bicicleta-bg {
+  background-color: var(--cor-11);
+}
+#bicicleta .header-interno-bg {
+  margin: 0 auto;
+  background-color: var(--cor-11);
+}
+#bicicleta .header-interno {
+  margin: 0 auto;
+  background-color: var(--cor-11);
+}
+#bicicleta .header-interno h1 span {
+  color: var(--cor-p1);
+  display: inline;
+}
+
+/* #########################3 */
+
+#bicicleta .bicicleta-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding-bottom: 60px;
+}
+#bicicleta .bicicleta-imagem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#bicicleta .bicicleta-imagem img {
+  flex: 1;
+  min-width: 200px;
+}
+#bicicleta .bicicleta-imagem img:first-child {
+  min-width: 100%;
+}
+#bicicleta .bicicleta-conteudo > p {
+  color: var(--cor-5);
+  margin-bottom: 32px;
+}
+.bicicleta-comprar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+#bicicleta .bicicleta-comprar > .btn {
+  margin: 0;
+  max-width: max-content;
+}
+.bicicleta-comprar-conteudo img {
+  display: inline;
+}
+.bicicleta-comprar-conteudo div {
+  display: flex;
+  gap: 8px;
+  background-color: var(--cor-12);
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: var(--cor-6);
+  max-width: max-content;
+}
+.bicicleta-comprar-conteudo div + div {
+  margin-top: 8px;
+}
+.info {
+  margin-bottom: 12px;
+  color: var(--cor-0);
+}
+#bicicleta .bicicleta-box-vantagens {
+  background-color: var(--cor-12);
+  border-radius: 4px;
+  padding: 32px;
+  margin-bottom: 60px;
+}
+#bicicleta .bicicleta-box-vantagens ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  color: var(--cor-0);
+}
+#bicicleta .bicicleta-box-vantagens li {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#bicicleta .bicicleta-box-vantagens p {
+  color: var(--cor-5);
+}
+#bicicleta .ficha-titulo {
+  margin-bottom: 12px;
+  color: var(--cor-0);
+}
+#bicicleta .ficha-tecnica {
+  background-color: var(--cor-12);
+  border-radius: 4px;
+  padding: 32px;
+  color: var(--cor-4);
+}
+#bicicleta .ficha-tecnica li + li {
+  padding-top: 12px;
+}
+#bicicleta .ficha-tecnica li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+}
+#bicicleta .ficha-tecnica span {
+  width: 60px;
+}
+@media (max-width: 1200px) {
+  #bicicleta .header-interno h1 {
+    font-size: 3rem;
+  }
+  #bicicleta .bicicleta-conteudo p {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 800px) {
+  #bicicleta .bicicleta-container {
+    grid-template-columns: 1fr;
+    padding-bottom: 60px;
+  }
+  #bicicleta .bicicleta-imagem {
+    grid-row: 2;
+  }
+}
+@media (max-width: 420px) {
+  .bicicleta-comprar {
+    flex-direction: column;
+    align-items: start;
+  }
+  #bicicleta .bicicleta-box-vantagens ul {
+    grid-template-columns: 1fr;
+  }
+  #bicicleta .header-interno h1 {
+    font-size: 2rem;
+  }
+}

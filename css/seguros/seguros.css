@@ -126,6 +126,10 @@
   #seguros .perguntas h2 {
     font-size: clamp(2.5rem, 1.042vw, 2rem);
   }
+  #seguros .perguntas {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   #seguros .header-interno > span {
     font-size: clamp(1rem, 1vw, 1.5rem);
   }
