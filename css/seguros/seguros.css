@@ -34,26 +34,123 @@
   color: var(--cor-p1);
   display: inline;
 }
-.vantagens-lista{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 40px;
-   padding-bottom: 120px;
+.vantagens-lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-bottom: 120px;
 }
-.vantagens-lista h3{
-   color: var(--cor-0);
-   margin: 8px 0;
+.vantagens-lista h3 {
+  color: var(--cor-0);
+  margin: 8px 0;
 }
-.vantagens-lista p{
-   color: var(--cor-6);
+.vantagens-lista p {
+  color: var(--cor-6);
 }
 /* perguntas */
 .perguntas h2 span {
-   color: var(--cor-p1);
-   display: inline;
- }
- .perguntas h2{
-   margin-top: 120px;
-   margin-bottom: 88px;
-   color: var(--cor-11);
- }
+  color: var(--cor-p1);
+  display: inline;
+}
+.perguntas {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.perguntas h2 {
+  margin-bottom: 88px;
+  color: var(--cor-11);
+}
+.perguntas dl div {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#seguros div dt {
+  color: var(--cor-11);
+  padding-top: 20px;
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.perguntas div dt::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  display: inline-block;
+}
+.perguntas div dt::after {
+  content: "";
+  width: 14px;
+  height: 6px;
+  background-image: url(../../img/icones/seta-abrir.svg);
+  display: inline-block;
+}
+.perguntas div dt:hover:after {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+#seguros div dd {
+  color: var(--cor-9);
+  padding-bottom: 20px;
+  max-width: 80ch;
+}
+#seguros dl:nth-child(even) {
+  background-color: var(--cor-1);
+  max-width: 1160px;
+  border-radius: 4px;
+}
+/* media */
+@media (max-width: 800px) {
+  .vantagens {
+    padding-top: 60px;
+  }
+  .vantagens h2 {
+    margin-bottom: 60px;
+  }
+  #seguros .vantagens-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  }
+  #seguros .header-interno h2 {
+    margin-bottom: 0;
+    font-size: clamp(2.5rem, 1.042vw, 2rem);
+  }
+  #seguros .vantagens h2 {
+    font-size: clamp(2.5rem, 1.042vw, 2rem);
+  }
+  #seguros .perguntas h2 {
+    font-size: clamp(2.5rem, 1.042vw, 2rem);
+  }
+  #seguros .header-interno > span {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+  }
+  #seguros .container {
+    padding-top: 60px;
+  }
+  #seguros .container {
+    padding-top: 60px;
+  }
+  #seguros .seguros-container {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .perguntas {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  #seguros .vantagens > h2 {
+    font-size: clamp(2.5rem, 1.042vw, 2rem);
+    padding-bottom: 60px;
+  }
+  #seguro .seguros-tipo > h3 {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+  }
+  #seguro .seguros-tipo > span {
+    font-size: clamp(1rem, 1vw, 1.5rem);
+  }
+}
