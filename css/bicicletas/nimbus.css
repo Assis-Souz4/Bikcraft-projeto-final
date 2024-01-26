@@ -14,7 +14,7 @@
   display: inline;
 }
 
-/* #########################3 */
+/* main */
 
 #bicicleta .bicicleta-container {
   display: grid;
@@ -136,4 +136,20 @@
   #bicicleta .header-interno h1 {
     font-size: 2rem;
   }
+}
+/* article - escolha a sua */
+#bicicleta .lista-container{
+  margin-bottom: 120px;
+  padding: 0;
+}
+#bicicleta .lista {
+ grid-template-columns: 1fr 1fr;
+}
+#bicicleta .lista{
+  margin: 0 auto;
+  max-width: 1200px;
+}
+#bicicleta .lista-titulo{
+  padding: 0;
+  margin-top: 60px;
 }
