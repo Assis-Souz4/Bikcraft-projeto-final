@@ -148,6 +148,9 @@
   margin-bottom: 120px;
   padding: 0;
 }
+#bicicleta .lista-container > h2{
+  padding: 0 20px;
+}
 #bicicleta .lista {
   grid-template-columns: 1fr 1fr;
 }
