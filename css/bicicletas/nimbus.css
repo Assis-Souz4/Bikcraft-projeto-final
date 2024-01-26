@@ -8,6 +8,7 @@
 #bicicleta .header-interno {
   margin: 0 auto;
   background-color: var(--cor-11);
+  color: var(--cor-0);
 }
 #bicicleta .header-interno h1 span {
   color: var(--cor-p1);
@@ -153,3 +154,6 @@
   padding: 0;
   margin-top: 60px;
 }
+
+/* article - pedale mais */
+
