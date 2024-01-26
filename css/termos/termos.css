@@ -4,7 +4,7 @@
   background-color: var(--cor-12);
 }
 .header-interno {
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .header-interno span {
@@ -146,5 +146,15 @@
   }
   .footer-redes {
     margin-bottom: 20px;
+  }
+  .header-interno {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .header-interno > h2{
+    font-size: 2rem !important;
+  }
+  .header-interno > span{
+    font-size: 1rem !important;
   }
 }

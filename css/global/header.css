@@ -14,6 +14,8 @@
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .header-menu a {
   color: var(--cor-0);
@@ -64,10 +66,8 @@
   }
 }
 @media (max-width: 330px) {
-  .header {
-    justify-content: center;
-  }
   .header-menu {
-    justify-content: center;
+    justify-content: start;
   }
+  
 }
