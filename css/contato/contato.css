@@ -17,6 +17,7 @@ body {
 .contato-container {
   display: grid;
   grid-template-columns: 5fr 7fr;
+  margin-bottom: 120px;
 }
 .loja {
   background-color: var(--cor-12);
@@ -187,14 +188,21 @@ body {
   }
 }
 
+#contato .local h2 > span {
+  color: var(--cor-p1);
+  display: inline;
+}
+
+#contato .local {
+  margin-bottom: 120px;
+}
 .map-responsive {
   overflow: hidden;
   padding-bottom: 30.25%;
   position: relative;
   height: 0;
   margin-top: 60px;
-  margin-bottom: 60px;
-  border-radius: 4px;
+  border-radius: 4px 4px 0 0;
 }
 
 .map-responsive iframe {
@@ -203,4 +211,78 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+#contato .local-endereco {
+  background-color: var(--cor-0);
+  padding-left: 60px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  border-radius: 0 0 4px 4px;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--cor-8);
+}
+#contato .local-lista {
+  background-color: var(--cor-0);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 60px;
+  align-items: end;
+  max-width: max-content;
+  padding-left: 32px;
+  margin-bottom: 32px;
+}
+#contato .local-lista li + li {
+  padding-top: 8px;
+}
+#contato .local-lista div {
+  border-right: 1px solid var(--cor-2);
+  padding-right: 32px;
+}
+#contato .local-endereco h3 {
+  margin-bottom: 32px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+}
+.local-detalhe {
+  position: relative;
+}
+.local-detalhe::before {
+  content: "";
+  height: 50px;
+  width: 1px;
+  background-color: var(--cor-2);
+  position: absolute;
+  left: -32px;
+}
+#contato .local-endereco span {
+  background-image: url(../../img/icones/horario.svg);
+  background-repeat: no-repeat;
+  padding-left: 32px;
+  margin-left: -10px;
+}
+
+
+@media (max-width: 1200px) {
+  #contato .local h2{
+    font-size: 3rem;
+  }
+  #contato .local {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 800px) {
+  #contato .local h2{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  #contato .local-lista {
+    grid-template-columns: 1fr;
+  }
 }
