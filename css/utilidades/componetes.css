@@ -16,6 +16,8 @@
   border-radius: 4px;
   text-transform: uppercase;
   font-family: "Poppins";
+  border: none;
+  cursor: pointer;
 }
 .btn:hover {
   background: var(--cor-p2);
