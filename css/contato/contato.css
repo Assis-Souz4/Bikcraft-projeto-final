@@ -248,6 +248,7 @@ body {
   font-size: 2rem;
   font-style: normal;
   font-weight: 600;
+  position: relative;
 }
 .local-detalhe {
   position: relative;
@@ -258,18 +259,26 @@ body {
   width: 1px;
   background-color: var(--cor-2);
   position: absolute;
-  left: -32px;
+  left: -20px;
 }
 #contato .local-endereco span {
   background-image: url(../../img/icones/horario.svg);
   background-repeat: no-repeat;
   padding-left: 32px;
-  margin-left: -10px;
+  margin-left: -20px;
+}
+#contato .local-endereco h3::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  position: absolute;
+  background-color: var(--cor-p1);
+  top: 20px;
+  left: -20px;
 }
 
-
 @media (max-width: 1200px) {
-  #contato .local h2{
+  #contato .local h2 {
     font-size: 3rem;
   }
   #contato .local {
@@ -277,7 +286,7 @@ body {
   }
 }
 @media (max-width: 800px) {
-  #contato .local h2{
+  #contato .local h3 {
     font-size: 2rem;
   }
 }
