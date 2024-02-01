@@ -12,7 +12,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="orcamento">
    <header class="header-bg">
       <div class="header container">
          <a href="./"><img src="./img/bikcraft.svg" alt="bikcraft"></a>
@@ -33,22 +33,35 @@
       </div>
    </div>
 
-   <section class="orcamento-conteudo" aria-label="temos orcamentos para todos os perfis de usuarios.">
+   <main>
+      <form class="form-orcamento container" action="">
 
-   </section>
+         <div class="escolha-produto">
+            <h2>bikcraft ou seguro?</h2>
 
-   <main class="orcamento-bg">
-      <div class="orcamento-container"  style="color: rgb(17, 132, 234);">
-         <div class="planos">
-            <form action="#" method="post">
-               <label for="tipos-de-servico"></label>
-               <button>
-                  <input type="radio">
-               </button>
-            </form>
+            <div class="tipo-produto">
+               <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
+               <label for="bikcraft">Bikcraft</label>
+               <input type="radio" name="tipo" value="seguro" id="seguro">
+               <label for="seguro">Seguro</label>
+            </div>
+
+            <div class="tipo-bicicleta">
+               <h2>Escolha a sua:</h2>
+
+               <input type="radio" name="tipo-bicicleta" value="nimbus" id="nimbus">
+               <label for="nimbus">Nimbus Stark <span>R$ 60.999</span></label>
+
+               <input type="radio" name="tipo-bicicleta" value="magic" id="magic">
+               <label for="magic">Magic Might <span>R$ 55.999</span></label>
+
+               <input type="radio" name="tipo-bicicleta" value="nebula" id="nebula">
+               <label for="nebula">Nebula Cosmic <span>R$ 52.999</span></label>
+            </div>
          </div>
-         <div class="dados-pessoais"></div>
-      </div>
+
+         <input class="btn" type="submit">
+      </form>
    </main>
 
    <footer class="footer-bg">
