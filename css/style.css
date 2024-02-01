@@ -19,8 +19,10 @@
 @import url(../css/bicicletas/bicicletas.css);
 @import url(../css/bicicletas/bicicletas02.css);
 /* ORÇAMENTO */
-@import url(../css/orcamento/orcamento.css);
+@import url(../css/orcamento/orcamento-seguro.css);
+@import url(../css/orcamento/orcamento-bikcraft.css);
+@import url(../css/orcamento/orcamento-dados-pessoais.css);
 /* SEGUROS */
 @import url(../css/seguros/seguros.css);
-/* CONTATO */ 
+/* CONTATO */
 @import url(../css/contato/contato.css);

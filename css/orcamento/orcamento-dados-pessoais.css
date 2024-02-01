@@ -1,0 +1,114 @@
+#orcamento .orcamento-dados-pessoais {
+  padding: 30px;
+  background-color: var(--cor-0);
+  border-radius: 0 5px 5px 0;
+}
+
+.form-dados-pessoais {
+  display: grid;
+}
+.form-dados-pessoais h2 {
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--cor-9);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.form-dados-pessoais h2::before {
+  content: "";
+  width: 4px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  left: -8px;
+}
+
+.form-dados-pessoais input {
+  padding: 12px 16px;
+  background-color: var(--cor-2);
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+.form-dados-pessoais label {
+  display: block;
+  margin-bottom: 2.5px;
+}
+
+.conteudo-dados-pessoais {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+.conteudo-dados-pessoais input {
+  margin-bottom: 20px;
+}
+.coll-full {
+  grid-column: 1/-1;
+}
+
+.nome-conteudo {
+  max-width: max-content;
+}
+.conteudo-dados-pessoais > #nome {
+  grid-column: 1;
+  grid-row: 2;
+  margin-right: 20px;
+}
+.conteudo-dados-pessoais > #sobrenome {
+  grid-column: 2/-1;
+}
+
+/* ENTREGA */
+
+.conteudo-entrega {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.conteudo-entrega label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.conteudo-entrega input {
+  grid-column: 1/-1;
+  margin-bottom: 20px;
+}
+.conteudo-entrega #cep {
+  grid-column: 1;
+  margin-right: 20px;
+}
+.conteudo-entrega #numero {
+  grid-column: 2;
+  grid-row: 2;
+}
+.conteudo-entrega .numero {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.form-dados-pessoais .termos {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+  align-items: center;
+  max-width: max-content;
+}
+#orcamento .termos a {
+  text-decoration: underline;
+}
+
+.form-dados-pessoais > .btn {
+  max-width: max-content;
+}
+#orcamento .termos #termos {
+  width: 20px;
+  height: 20px;
+  grid-column: 1;
+}
