@@ -2,7 +2,7 @@
 #orcamento{
   background-color: #F7F7F7;
 }
-main {
+#orcamento main {
   display: grid;
   grid-template-columns: 5fr 7fr;
 }
