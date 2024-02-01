@@ -1,0 +1,123 @@
+.form-orcamento {
+  background-color: var(--cor-1);
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+.form-orcamento h2::before {
+  content: "";
+  width: 4px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  left: -8px;
+  color: var(--cor-4);
+}
+.escolha-produto {
+  background-color: var(--cor-12);
+  padding: 30px;
+  border-radius: 5px 0 0 5px;
+  margin-bottom: 10vh;
+}
+.escolha-produto h2 {
+  font-family: Poppins;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cor-5);
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.tipo-produto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.tipo-produto label {
+  display: flex;
+  padding: 12px 16px;
+  background-color: var(--cor-10);
+  color: var(--cor-4);
+  border-radius: 4px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 32px;
+  align-items: center;
+  position: relative;
+  border: 1px solid var(--cor-10);
+}
+.tipo-produto label:hover {
+  background-color: var(--cor-9);
+}
+.tipo-produto label::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--cor-7);
+  border-radius: 50px;
+  position: absolute;
+  background-color: var(--cor-0);
+  left: 8px;
+}
+.tipo-produto input {
+  pointer-events: none;
+  opacity: 10;
+  display: none;
+  left: 50px;
+}
+.tipo-produto input:checked + label {
+  background-color: var(--cor-0);
+  color: var(--cor-11);
+  box-shadow: 0 0 0 2px var(--cor-p1);
+}
+.tipo-produto input:checked + label::before {
+  box-shadow: inset 0 0 0 2px var(--cor-0), inset 0 0 0 6px var(--cor-9);
+}
+
+/* Escolha a sua: */
+.tipo-bicicleta h2 {
+  margin-bottom: 24px;
+}
+.tipo-bicicleta {
+  display: grid;
+  gap: 24px;
+}
+.tipo-bicicleta label {
+  background-color: var(--cor-10);
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: var(--cor-4);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid var(--cor-10);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.tipo-bicicleta input {
+  pointer-events: none;
+  opacity: 10;
+  display: none;
+  left: 50px;
+}
+.tipo-bicicleta input:checked + label {
+  background-color: var(--cor-0);
+  color: var(--cor-11);
+  box-shadow: 0 0 0 2px var(--cor-p1);
+}
+.tipo-bicicleta input:checked + label::before {
+  box-shadow: inset 0 0 0 2px var(--cor-0), inset 0 0 0 6px var(--cor-9);
+}
+.tipo-bicicleta span {
+  display: none;
+}
+.tipo-bicicleta input:checked + label > span {
+  display: block;
+}
+.tipo-bicicleta label:hover {
+   background-color: var(--cor-9);
+ }
+/* fazer os detalhes de informação das bicicletas */
