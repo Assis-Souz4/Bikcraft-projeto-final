@@ -20,13 +20,14 @@
 }
 .escolha-produto h2 {
   font-family: Poppins;
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: 600;
   color: var(--cor-5);
   display: flex;
   align-items: center;
   position: relative;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .tipo-produto {
   display: grid;
@@ -79,6 +80,7 @@
 /* Escolha a sua: */
 .tipo-bicicleta h2 {
   margin-bottom: 24px;
+  margin-top: 20px;
 }
 .tipo-bicicleta {
   display: grid;

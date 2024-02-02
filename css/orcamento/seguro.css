@@ -1,0 +1,26 @@
+#orcamento .tipo-seguro h2{
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   margin-bottom: 44px;
+}
+.tipo-seguro {
+   display: grid;
+   grid-column: 1/-1;
+   align-items: center;
+   display: none;
+}
+.tipo-seguro label{
+   justify-content: space-between;
+
+   margin-bottom: 20px;
+}
+.tipo-produto > #seguro:checked + label ~ .tipo-seguro{
+   display: grid;
+}
+.tipo-seguro span {
+   display: none;
+ }
+ .tipo-seguro input:checked + label > span {
+   display: grid;
+ }

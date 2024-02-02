@@ -25,6 +25,7 @@
 
 /* ORÇAMENTO */
 @import url(../css/orcamento/escolha-produto.css);
+@import url(../css/orcamento/seguro.css);
 
 /* SEGUROS */
 @import url(../css/seguros/seguros.css);
