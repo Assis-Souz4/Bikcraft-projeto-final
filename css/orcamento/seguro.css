@@ -8,7 +8,6 @@
    display: grid;
    grid-column: 1/-1;
    align-items: center;
-   display: none;
 }
 .tipo-seguro label{
    justify-content: space-between;
@@ -20,7 +19,4 @@
 }
 .tipo-seguro span {
    display: none;
- }
- .tipo-seguro input:checked + label > span {
-   display: grid;
  }
