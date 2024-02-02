@@ -82,7 +82,9 @@
 }
 .tipo-bicicleta {
   display: grid;
-  gap: 24px;
+  gap: 20px;
+  grid-column: 1/-1;
+  display: none;
 }
 .tipo-bicicleta label {
   background-color: var(--cor-10);
@@ -96,6 +98,8 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-left: 32px;
 }
 .tipo-bicicleta input {
   pointer-events: none;
@@ -114,10 +118,59 @@
 .tipo-bicicleta span {
   display: none;
 }
+/* se bkcraft estiver chegado mostra opções de bicicletas disponiveis */
+#bikcraft:checked ~ .tipo-bicicleta {
+  display: grid;
+}
+
+/* verifica se o input esta checado e mostra o span com o valor */
 .tipo-bicicleta input:checked + label > span {
   display: block;
 }
 .tipo-bicicleta label:hover {
-   background-color: var(--cor-9);
- }
-/* fazer os detalhes de informação das bicicletas */
+  background-color: var(--cor-9);
+}
+.tipo-bicicleta label::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--cor-7);
+  border-radius: 50px;
+  position: absolute;
+  background-color: var(--cor-0);
+  left: 8px;
+}
+
+/* conteudo */
+.conteudo-tipo-bicicleta {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-0);
+  border-radius: 4px;
+  padding: 16px 16px 16px 38px;
+  color: var(--cor-8);
+  display: none;
+}
+.lista-conteudo li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.lista-conteudo li + li {
+  padding-top: 8px;
+}
+.conteudo-tipo-bicicleta li > img {
+  height: 16px;
+  width: 16px;
+  object-fit: contain;
+}
+
+/* mostrar conteudo-tipo-bicicleta*/
+.tipo-bicicleta input:checked + label + .conteudo-tipo-bicicleta {
+  display: grid;
+}

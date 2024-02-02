@@ -33,148 +33,92 @@
       </div>
    </div>
 
-   <main class="container">
-      <!-- ORÇAMENTO-BIKCRAFT -->
-      <form class="form-orcamento" action="" method="">
+   <main>
+      <form class="form-orcamento container" action="">
 
-         <div id="box-escolha-produto" class="container">
+         <div class="escolha-produto">
+            <h2>bikcraft ou seguro?</h2>
 
-            <h2>Bikcraft ou Seguro?</h2>
-
-            <div class="box-bikcraft-ou-seguro">
-               <input type="radio" name="escolha" id="bikcraft">
+            <div class="tipo-produto">
+               <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
                <label for="bikcraft">Bikcraft</label>
-               <input type="radio" name="escolha" id="seguro">
+               <input type="radio" name="tipo" value="seguro" id="seguro">
                <label for="seguro">Seguro</label>
+
+               <div class="tipo-bicicleta">
+                  <h2>Escolha a sua:</h2>
+
+                  <input type="radio" name="tipo-bicicleta" value="nimbus" id="nimbus">
+                  <label for="nimbus">Nimbus Stark <span>R$ 60.999</span></label>
+
+                  <div class="conteudo-tipo-bicicleta">
+                     <ul class="lista-conteudo">
+                        <li><img src="./img/icones/eletrica.svg" alt="">
+                           <h3>Motor Elétrico</h3>
+                        </li>
+                        <li><img src="./img/icones/carbono.svg" alt="">
+                           <h3>Fibra de Carbono</h3>
+                        </li>
+                        <li><img src="./img/icones/velocidade.svg" alt="">
+                           <h3>60 km/h</h3>
+                        </li>
+                        <li><img src="./img/icones/rastreador.svg" alt="">
+                           <h3>Rastreador</h3>
+                        </li>
+                     </ul>
+                     <img src="./img/bicicleta/nimbus1.jpg" alt="">
+                  </div>
+
+                  <input type="radio" name="tipo-bicicleta" value="magic" id="magic">
+                  <label for="magic">Magic Might <span>R$ 55.999</span></label>
+
+                  <div class="conteudo-tipo-bicicleta">
+                     <ul class="lista-conteudo">
+                        <li><img src="./img/icones/eletrica.svg" alt="">
+                           <h3>Motor Elétrico</h3>
+                        </li>
+                        <li><img src="./img/icones/carbono.svg" alt="">
+                           <h3>Fibra de Carbono</h3>
+                        </li>
+                        <li><img src="./img/icones/velocidade.svg" alt="">
+                           <h3>55 km/h</h3>
+                        </li>
+                        <li><img src="./img/icones/rastreador.svg" alt="">
+                           <h3>Rastreador</h3>
+                        </li>
+                     </ul>
+                     <img src="./img/bicicleta/nimbus2.jpg" alt="">
+                  </div>
+
+                  <input type="radio" name="tipo-bicicleta" value="nebula" id="nebula">
+                  <label for="nebula">Nebula Cosmic <span>R$ 52.999</span></label>
+
+                  <div class="conteudo-tipo-bicicleta">
+                     <ul class="lista-conteudo">
+                        <li><img src="./img/icones/eletrica.svg" alt="">
+                           <h3>Motor Elétrico</h3>
+                        </li>
+                        <li><img src="./img/icones/carbono.svg" alt="">
+                           <h3>Fibra de Carbono</h3>
+                        </li>
+                        <li><img src="./img/icones/velocidade.svg" alt="">
+                           <h3>50 km/h</h3>
+                        </li>
+                        <li><img src="./img/icones/rastreador.svg" alt="">
+                           <h3>Rastreador</h3>
+                        </li>
+                     </ul>
+                     <img src="./img/bicicleta/nimbus3.jpg" alt="">
+                  </div>
+
+               </div>
             </div>
 
-            <h2>Escolha a sua:</h2>
 
-            <div class="box-escolha-bicicleta">
-               <input type="radio" name="bikcraft" id="nimbus">
-               <label for="nimbus">Nimbus Stark<span id="show-preco-bik">R$ 60.999</span></label>
-
-               <div class="escolha-bicicleta-conteudo">
-                  <ul>
-                     <li>
-                        <img src="./img/icones/eletrica.svg" alt="">Motor Elétrico
-                     </li>
-                     <li>
-                        <img src="./img/icones/carbono.svg" alt="">Fibra de Carbono
-                     </li>
-                     <li>
-                        <img src="./img/icones/velocidade.svg" alt="">60 km/h
-                     </li>
-                     <li>
-                        <img src="./img/icones/rastreador.svg" alt="">Rastreador
-                     </li>
-                  </ul>
-                  <div><img src="./img/bicicleta/nimbus1.jpg" alt="Nimbus Stark"></div>
-               </div>
-
-
-               <input type="radio" name="bikcraft" id="magic-might">
-               <label for="magic-might">Magic Might<span id="show-preco-bik">R$ 55.999</span></label>
-
-               <div class="escolha-bicicleta-conteudo">
-                  <ul>
-                     <li>
-                        <img src="./img/icones/eletrica.svg" alt="">Motor Elétrico
-                     </li>
-                     <li>
-                        <img src="./img/icones/carbono.svg" alt="">Fibra de Carbono
-                     </li>
-                     <li>
-                        <img src="./img/icones/velocidade.svg" alt="">55 km/h
-                     </li>
-                     <li>
-                        <img src="./img/icones/rastreador.svg" alt="">Rastreador
-                     </li>
-                  </ul>
-                  <div><img src="./img/bicicleta/nimbus2.jpg" alt="Nimbus Stark"></div>
-               </div>
-
-               <input type="radio" name="bikcraft" id="Nebula-cosmic">
-               <label for="Nebula-cosmic">Nebula Cosmic<span id="show-preco-bik">R$ 52.999</span></label>
-
-               <div class="escolha-bicicleta-conteudo">
-                  <ul>
-                     <li>
-                        <img src="./img/icones/eletrica.svg" alt="">Motor Elétrico
-                     </li>
-                     <li>
-                        <img src="./img/icones/carbono.svg" alt="">Fibra de Carbono
-                     </li>
-                     <li>
-                        <img src="./img/icones/velocidade.svg" alt="">50 km/h
-                     </li>
-                     <li>
-                        <img src="./img/icones/rastreador.svg" alt="">Rastreador
-                     </li>
-                  </ul>
-                  <div><img src="./img/bicicleta/nimbus3.jpg" alt="Nimbus Stark"></div>
-               </div>
-
-            </div>
          </div>
+
+         <input class="btn" type="submit">
       </form>
-
-      <article class="orcamento-dados-pessoais">
-         <form class="form-dados-pessoais" action="" method="">
-            <h2>Dados Pessoais</h2>
-
-            <div class="conteudo-dados-pessoais">
-
-
-               <label for="nome">Nome</label>
-               <input type="text" id="nome">
-
-
-               <label for="sobrenome">Sobrenome</label>
-               <input type="text" id="sobrenome">
-
-
-               <label for="cpf">CPF</label>
-               <input class="coll-full" type="number" id="cpf" placeholder="000.000.000-00">
-
-               <label for="email">Email</label>
-               <input class="coll-full" type="email" id="email">
-
-            </div>
-
-            <h2>entrega</h2>
-
-            <div class="conteudo-entrega">
-
-               <label class="" for="cep">CEP</label>
-               <input type="number" id="cep" placeholder="0000-000">
-
-               <label class="numero" for="numero">Número</label>
-               <input type="number" id="numero">
-
-               <label for="logradouro">Logradouro</label>
-               <input type="text" id="logradouro" placeholder="Rua, avenida...">
-
-               <label for="bairro">Bairro</label>
-               <input type="text" id="bairro">
-
-               <label for="cidade">Cidade</label>
-               <input class="coll-2" type="text" id="cidade">
-
-               <label for="estado">Estado</label>
-               <input class="coll-1" type="text" id="estado">
-
-            </div>
-
-            <div class="termos">
-               <input type="checkbox" name="termos" id="termos">
-               <label for="termos">Li e aceito os <a href="./termos.html">termos e condições</a>.</label>
-            </div>
-
-            <input class="btn" type="submit" value="SOLICITAR ORÇAMENTO"></input>
-         </form>
-      </article>
-
    </main>
 
    <footer class="footer-bg">

@@ -3,9 +3,11 @@
 @import url(./global/header.css);
 @import url(./utilidades/tipografia.css);
 @import url(./global/footer.css);
+
 /* UTILIDADES */
 @import url(./utilidades/cores.css);
 @import url(./utilidades/componetes.css);
+
 /* HOME */
 @import url(./home/introducao.css);
 @import url(./home/lista.css);
@@ -13,16 +15,20 @@
 @import url(./home/parceiros.css);
 @import url(./home/depoimento.css);
 @import url(./home/seguros.css);
+
 /* TERMOS */
 @import url(../css/termos/termos.css);
+
 /* BICICLETAS */
 @import url(../css/bicicletas/bicicletas.css);
 @import url(../css/bicicletas/bicicletas02.css);
+
 /* ORÇAMENTO */
-@import url(../css/orcamento/orcamento-seguro.css);
-@import url(../css/orcamento/orcamento-bikcraft.css);
-@import url(../css/orcamento/orcamento-dados-pessoais.css);
+@import url(../css/orcamento/escolha-produto.css);
+
 /* SEGUROS */
 @import url(../css/seguros/seguros.css);
+
 /* CONTATO */
 @import url(../css/contato/contato.css);
+
