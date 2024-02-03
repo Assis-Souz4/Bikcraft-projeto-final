@@ -2,6 +2,7 @@
   background-color: var(--cor-1);
   display: grid;
   grid-template-columns: 5fr 7fr;
+  margin-bottom: 40PX;
 }
 .form-orcamento h2::before {
   content: "";
@@ -16,7 +17,6 @@
   background-color: var(--cor-12);
   padding: 30px;
   border-radius: 5px 0 0 5px;
-  margin-bottom: 10vh;
 }
 .escolha-produto h2 {
   font-family: Poppins;
@@ -180,3 +180,8 @@
 .tipo-bicicleta input:checked + label + .conteudo-tipo-bicicleta {
   display: grid;
 }
+
+/* falta o responsivo e esconder ouro e prata */
+/* ajustar links internos */
+/* falata o efeito outline */
+/* falta o detalhe do site no topo */

@@ -1,4 +1,62 @@
-.dados-pessoais{
-   background-color: var(--cor-1);
-   padding: 30px;
+.dados-pessoais {
+  padding: 30px;
+  background-color: var(--cor-0);
+  border-radius: 0 5px 5px 0;
+}
+.dados-pessoais h2 {
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--cor-9);
+}
+.dados-pessoais h2::before {
+  content: "";
+  width: 4px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  position: absolute;
+  left: -8px;
+  color: var(--cor-4);
+}
+.dados-usuarios div {
+  display: grid;
+}
+.dados-usuarios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.col-2 {
+  grid-column: 1/-1;
+}
+.dados-usuarios input {
+  padding: 12px 16px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: var(--cor-2);
+}
+.dados-usuarios label {
+  margin-bottom: 8px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--cor-11);
+}
+
+.termos{
+   display: grid;
+   grid-template-columns: auto 1fr;
+   align-items: center;
+}
+.termos #termos{
+   width: 20px;
+   height: 20px;
+}
+#orcamento main{
+   box-shadow: 0 0 10 ;
 }
