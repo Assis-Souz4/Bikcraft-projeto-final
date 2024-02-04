@@ -33,7 +33,8 @@
   transition: 0.3s;
   position: absolute;
 }
-.header-menu a:hover::after {
+.header-menu a:hover::after,
+.header-menu a.linkAtivo::after {
   width: 100%;
 }
 
@@ -69,5 +70,4 @@
   .header-menu {
     justify-content: start;
   }
-  
 }

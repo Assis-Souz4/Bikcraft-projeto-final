@@ -7,6 +7,7 @@
 /* UTILIDADES */
 @import url(./utilidades/cores.css);
 @import url(./utilidades/componetes.css);
+@import url(./utilidades/animacao.css);
 
 /* HOME */
 @import url(./home/introducao.css);

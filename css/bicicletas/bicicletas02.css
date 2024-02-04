@@ -88,10 +88,10 @@
 #bicicleta .bicicleta-box-vantagens p {
   color: var(--cor-5);
 }
-#bicicleta .bicicleta-box-vantagens li{
+#bicicleta .bicicleta-box-vantagens li {
   margin: 0;
   padding: 0;
- }
+}
 #bicicleta .ficha-titulo {
   margin-bottom: 12px;
   color: var(--cor-0);
@@ -148,7 +148,7 @@
   margin-bottom: 120px;
   padding: 0;
 }
-#bicicleta .lista-container > h2{
+#bicicleta .lista-container > h2 {
   padding: 0 20px;
 }
 #bicicleta .lista {

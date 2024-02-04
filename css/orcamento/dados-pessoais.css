@@ -47,6 +47,16 @@
   font-weight: 500;
   color: var(--cor-11);
 }
+div ~ div > label + input:focus  {
+   background-color: var(--cor-0);
+   color: var(--cor-11);
+   box-shadow: 0 0 0 2px var(--cor-p1);
+ }
+ .focus > label + input:focus  {
+   background-color: var(--cor-0);
+   color: var(--cor-11);
+   box-shadow: 0 0 0 2px var(--cor-p1);
+ }
 
 .termos{
    display: grid;
@@ -57,6 +67,18 @@
    width: 20px;
    height: 20px;
 }
+.termos a{
+   text-decoration: underline;
+}
 #orcamento main{
    box-shadow: 0 0 10 ;
 }
+
+ 
+ @media (max-width: 500px) {
+   .dados-usuarios {
+     grid-template-columns: 1fr;
+     gap: 20px;
+   }
+ }
+ 

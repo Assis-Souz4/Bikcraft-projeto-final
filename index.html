@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Bikcraft - Bicicletas Elétricas</title>
    <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.">
+   <link rel="preload" href="./css/style.css" as="style">
    <link rel="stylesheet" href="./css/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,29 +28,29 @@
       </div>
    </header>
    <!-- introdução -->
-   <main class="introducao-bg">
+   <main class="introducao-bg fadeInDown">
       <div class="introducao container">
          <div class="introducao-conteudo">
-            <h1 class="introducao-titulo font-1-xxl">
+            <h1 class="introducao-titulo font-1-xxl" data-anime="200">
                Bicicletas feitas sob medida<span>.</span>
             </h1>
-            <p class="font-2-l">
+            <p class="font-2-l" data-anime="400">
                Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.
             </p>
-            <a class="btn" href="./bicicletas.html">escolha a sua</a>
+            <a class="btn" href="./bicicletas.html" data-anime="600">escolha a sua</a>
             <div class="detalhe"><img src="./img/dec/bottom-left.svg" alt="#"></div>
          </div>
-         <div class="introducao-img">
+         <div class="introducao-img" data-anime="800">
             <img src="./img/bicicletas/nimbus-home.jpg" alt="Bicicleta elétrica preta" width="1200" height="1600">
          </div>
       </div>
    </main>
    <!-- bicicletas lista -->
-   <article class="lista-bg">
+   <article class="lista-bg fadeInDown" data-anime="400">
       <div class="lista-container">
          <h2 class="lista-titulo font-1-xxl container">escolha a sua<span>.</span></h2>
 
-         <ul class="lista">
+         <ul class="lista" data-anime="600">
             <li class="lista-item">
                <a href="./bicicletas/magic.html">
                   <div><img src="./img/bicicletas/magic-home.jpg" alt="Magic"></div>
@@ -58,7 +59,7 @@
                </a>
             </li>
 
-            <li class="lista-item">
+            <li class="lista-item" data-anime="600">
                <a href="./bicicletas/nimbus.html">
                   <div><img src="./img/bicicletas/nimbus-home.jpg" alt="Nimbus"></div>
                   <h3 class="font-1-xl">Nimbus Stark</h3>
@@ -66,7 +67,7 @@
                </a>
             </li>
 
-            <li class="lista-item">
+            <li class="lista-item" data-anime="600">
                <a href="./bicicletas/Nebula.html">
                   <div><img src="./img/bicicletas/nebula-home.jpg" alt="Nebula"></div>
                   <h3 class="font-1-xl">Nebula Cosmic</h3>
@@ -78,7 +79,7 @@
    </article>
    <!-- tecnologia -->
    <section class="tecnologia-bg" aria-label="Bicicletas artezanais com alta tecnologia.">
-      <div class="tecnologia-container container">
+      <div class="tecnologia-container container fadeInDown" data-anime="400">
          <div class="tecnologia-conteudo">
             <span class="texto2 font-2-l-b">
                Tecnologia Avançada
@@ -119,7 +120,7 @@
       </div>
    </section>
    <!-- parceiros -->
-   <section class="parceiros" aria-label="Nossos Parceiros.">
+   <section class="parceiros fadeInDown" aria-label="Nossos Parceiros." data-anime="400">
       <h2 class="parceiros-titulo font-1-xxl">nossos parceiros<span>.</span></h2>
 
       <ul class="parceiros-lista">
@@ -134,7 +135,7 @@
       </ul>
    </section>
    <!-- depoimentos -->
-   <section class="depoimento" aria-label="Depoimento.">
+   <section class="depoimento fadeInDown" aria-label="Depoimento." data-anime="400">
       <div class="depoimento-imagem">
          <img src="./img/fotos/depoimento.jpg" alt="Garota falando sobre a experiência de ter uma bikcraft.">
       </div>
@@ -149,7 +150,7 @@
       </div>
    </section>
    <!-- seguros -->
-   <article class="seguros-bg" aria-label="Seguros">
+   <article class="seguros-bg fadeInDown" aria-label="Seguros" data-anime="600">
 
       <h2 class="titulo font-1-xxl container">seguros<span>.</span></h2>
 
@@ -232,6 +233,9 @@
          <span class="copy font-2-m">Bikcraft © Alguns direitos reservados.</span>
       </div>
    </footer>
+
+   <script src="./plugins/simple-anime.js"></script>
+   <script src="./js/script.js"></script>
 </body>
 
 </html>

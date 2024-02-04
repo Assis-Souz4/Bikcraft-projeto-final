@@ -1,8 +1,20 @@
+#orcamento .header-interno-bg{
+  background-color: var(--cor-11);
+}
+#orcamento .header-interno{
+  margin-bottom: 0;
+}
+#orcamento{
+  background: linear-gradient(var(--cor-11) 800px, var(--cor-1) 0px);
+}
 .form-orcamento {
   background-color: var(--cor-1);
   display: grid;
   grid-template-columns: 5fr 7fr;
-  margin-bottom: 40PX;
+  margin-bottom: 120px;
+  background-color: var(--cor-12);
+  padding: 0;
+  border-radius: 5px;
 }
 .form-orcamento h2::before {
   content: "";
@@ -14,9 +26,9 @@
   color: var(--cor-4);
 }
 .escolha-produto {
-  background-color: var(--cor-12);
   padding: 30px;
   border-radius: 5px 0 0 5px;
+  background-color: var(--cor-12);
 }
 .escolha-produto h2 {
   font-family: Poppins;
@@ -77,8 +89,8 @@
   box-shadow: inset 0 0 0 2px var(--cor-0), inset 0 0 0 6px var(--cor-9);
 }
 /* escondo o tipo seguro se bikcraft estiver */
-.tipo-produto input:checked + label + .tipo-seguro{
-   display: none;
+.tipo-produto input:checked + label + .tipo-seguro {
+  display: none;
 }
 
 /* Escolha a sua: */
@@ -181,7 +193,21 @@
   display: grid;
 }
 
-/* falta o responsivo e esconder ouro e prata */
-/* ajustar links internos */
-/* falata o efeito outline */
-/* falta o detalhe do site no topo */
+@media (max-width: 800px) {
+  .form-orcamento {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tipo-produto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  #orcamento .header-interno {
+    margin-bottom: 30px;
+  }
+}
