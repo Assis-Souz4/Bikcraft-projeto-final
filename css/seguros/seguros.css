@@ -99,10 +99,10 @@
   transform: rotate(180deg);
   transition: 0.3s;
 }
-.perguntas dd {
+.js .perguntas dd {
   display: none;
 }
-.perguntas dd.ativa {
+.js .perguntas dd.ativa {
   display: block;
 }
 #seguros div dd {
