@@ -294,4 +294,10 @@ body {
   #contato .local-lista {
     grid-template-columns: 1fr;
   }
+  #contato .footer-contato{
+    padding-top: 0px;
+  }
+  #contato .container{
+    padding-top: 30px;
+  }
 }

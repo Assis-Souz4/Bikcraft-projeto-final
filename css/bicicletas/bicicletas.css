@@ -198,4 +198,10 @@
     right: 10px;
     font-size: 1rem;
   }
+  #bicicletas .footer-contato {
+    padding-top: 0px;
+  }
+  #bicicletas .container {
+    padding-top: 30px;
+  }
 }

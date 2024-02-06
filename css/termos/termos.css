@@ -158,3 +158,11 @@
     font-size: 1rem !important;
   }
 }
+@media (max-width: 600px) {
+  #termos .footer-contato{
+    padding-top: 0px;
+  }
+  #termos .container{
+    padding-top: 30px;
+  }
+}

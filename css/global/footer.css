@@ -89,6 +89,12 @@
   .footer-contato span::after {
     max-width: 100%;
   }
+  .footer-contato{
+    padding-top: 30px;
+  }
+  .footer-informacoes{
+    padding-top: 30px;
+  }
 }
 @media (max-width: 600px) {
   #footer-container {
@@ -103,6 +109,9 @@
   }
   .footer-informacoes {
     padding-bottom: 40px;
+  }
+  .footer-informacoes{
+    padding-top: 0px;
   }
   .footer-contato ul::after {
     max-width: 80%;

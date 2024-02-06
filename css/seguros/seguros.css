@@ -169,3 +169,11 @@
     font-size: clamp(1rem, 1vw, 1.5rem);
   }
 }
+@media (max-width: 600px) {
+  #seguros .footer-contato{
+    padding-top: 0px;
+  }
+  #seguros .container{
+    padding-top: 30px;
+  }
+}
