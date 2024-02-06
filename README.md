@@ -6,7 +6,8 @@
 
 <p align="center">Exemplos...</p>
 
-<p align="center">O codigo abaixo é um CSS válido para display: none em um determinado elemento da pagina. </p>
+### O codigo abaixo é um CSS válido para display: none em um determinado elemento da pagina.
+
 <p align="center">
   .tipo-produto input:checked + label + .tipo-seguro {
   display: none;
